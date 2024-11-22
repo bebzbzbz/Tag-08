@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Roboto Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        background-color: #EEE;
+        font-family: "Roboto Regular", Helvetica, sans-serif;
+
+        .marginBottom {
+            margin-bottom: 100px;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #666;
+            display: inline-block;
+            transition: color .4s ease-in-out, transform .3s ease-in-out;
+
+            &:hover {
+                color: #b9b9b9;
+                transform: translateY(-3px);
+            }
+        }
+    
+        header {
+            box-shadow: 0 4px 4px #00000025;
+            padding: 20px 100px 50px;
+    
+            nav {
+
+                a {
+                    color: #659D89;
+                    font-size: 14px;
+                    margin-right: 1.5rem;
+                }
+            }
+    
+            h1 {
+                color: #659D89;
+                font-size: 50px;
+                font-family: "Roboto Light";
+                margin-bottom: 200px;
+                width: 620px;
+    
+                span {
+                    color: #000;
+                    display: block;
+                }
+            }
+        }
+    
+        main {
+            padding: 64px 100px 100px;
+            border-bottom: 1px solid #CCC;
+    
+            section {
+                margin-bottom: 100px;
+
+                h2 {
+                    font-size: 20px;
+                    font-family: "Roboto Light";
+                    margin-bottom: 80px;
+
+                    span {
+                        display: block;
+                        font-size: 16px;
+                        margin-top: 1rem;
+                    }
+                }
+
+                article {
+                    text-align: center;
+                    padding: 0 80px;
+
+                    div {
+                        width: 65%;
+
+                        img {
+                            width: 100%;
+                        }
+    
+                        p {
+                            font-size: 14px;
+                            color: #666;
+                        }
+    
+                        h3 {
+                            font-size: 20px;
+                            font-weight: normal;
+                        }
+    
+                        img, p, h3 {
+                            margin-bottom: 20px;
+                        }
+
+                        &.right {
+                            margin-left: auto;
+                        }
+                    }
+    
+                    &.gallery {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+        
+                        img {
+                            width: 30%;
+                            margin-bottom: 5%;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 85px 0 40px;
+            
+            a {
+                margin-bottom: 80px;
+            }
+    
+            aside {
+                font-size: 10px;
+                color: #666;
+            }
+        }
+    }
+}
