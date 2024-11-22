@@ -53,7 +53,7 @@ html {
                 color: #659D89;
                 font-size: 50px;
                 font-family: "Roboto Light";
-                margin-bottom: 200px;
+                margin-bottom: 50px;
                 width: 620px;
     
                 span {
@@ -61,14 +61,32 @@ html {
                     display: block;
                 }
             }
+
+            ul {
+                list-style: none;
+                text-align: right;
+                margin-bottom: 80px;
+
+                li {
+                    margin-bottom: 3px;
+
+                    a i {
+                        font-size: 1.2rem;
+                        transition: text-shadow .4s ease-in-out, color .4s ease-in-out;
+
+                        &:hover {
+                            text-shadow: 0 0 4px #666;
+                            color: #000;
+                        }
+                    }
+                } 
+            }
         }
     
-        main {
-            padding: 64px 100px 100px;
-            border-bottom: 1px solid #CCC;
-    
+        main {    
             section {
-                margin-bottom: 100px;
+                padding: 60px 100px 80px;
+                border-bottom: 1px solid #CCC;
 
                 h2 {
                     font-size: 20px;
@@ -86,12 +104,17 @@ html {
                     text-align: center;
                     padding: 0 80px;
 
+                    img {
+                        width: 100%;
+                        transition: box-shadow .3s ease-in-out;
+
+                        &:hover {
+                            box-shadow: 0 0 4px #666;
+                        }
+                    }
+
                     div {
                         width: 65%;
-
-                        img {
-                            width: 100%;
-                        }
     
                         p {
                             font-size: 14px;
